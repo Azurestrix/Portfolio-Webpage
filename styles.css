@@ -49,12 +49,13 @@ label {
 /* Nav */
 
 
+/* Itt esetleg nemtusz megoldást amivel jobban reszponzívabbá tudnám a divet anélkül hogy media sceen esen átállítgatom egyenként. */
+
 .Popup_Window {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: -1;
     outline: 1px red solid;
 
 }
@@ -71,6 +72,14 @@ label {
 }
 
 
+
+#WASD {
+    z-index: -1000;
+}
+
+#KEKW {
+
+}
 /* Footer */
 #FOOTER_SECTION {
     display: flex;
