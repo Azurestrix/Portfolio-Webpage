@@ -23,6 +23,7 @@ function visibility_2(){
 
 /*Felugró Ablak */
 
+/*
 let $Loader = document.querySelector('#LOADER')
 
 window.addEventListener('load', invisibility);
@@ -31,3 +32,4 @@ function invisibility(){
     $Loader.classList.add('.Invisible');
 }
 
+*/
