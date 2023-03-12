@@ -14,15 +14,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
+    min-width: fit-content;
+
+    /* alul a scrollbar azért van mert a kép ne teljesen illeszkedik nagyobb mint maga a weboldal ezzel mit csináljak */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     /*<a href="https://www.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_14803753.htm#query=ai%20background&position=4&from_view=search&track=sph">Image by liuzishan</a> on Freepik*/
 }
 /* General */
 
 
 /* Loader */
-/*
+
 #LOADER{
+    display: flex;
     background-color: #051755;
     z-index: 1;
     width: 100%;
@@ -30,11 +36,12 @@ body {
     position: fixed;
     transition: opacity 3s ease-in-out;
     opacity: 1;
+
 }
 
-.Invisible{
-    z-index: -1;
-    opacity: 0;
+.Invisible {
+    z-index: -1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */ 
+    opacity: 0 !important;  /*Ezt megtudom valahogy kultúráltabban oldani? */
 }
 /*Loader */
 
@@ -85,7 +92,7 @@ nav {
 /* Nav */
 
 
-/* Itt esetleg nemtusz megoldást amivel jobban reszponzívabbá tudnám a divet anélkül hogy media sceen esen átállítgatom egyenként. */
+/* Itt esetleg nemtusz megoldást amivel jobban reszponzívabbá tudnám a divet anélkül hogy media sceen esen átállítgatom egyenként. Bár szerintem kinyirtam a flexboxot és ez a gond. */
 
 /* Main */
 
@@ -94,18 +101,22 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    position: relative;
 
 }
+
 
 .Popup_Window div {
     display: flex;
     position: fixed;
     align-content: flex-start;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-between;
     top: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
     min-width: 100vh;
+    max-width: 100vh;
     height: 80vh;
     background-color: #051755;
     transition: opacity 1s ease;
@@ -113,13 +124,15 @@ nav {
     justify-content: center;
     opacity: 0;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} 
+}  
 
 .Visible{
     opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
 }
 
-#PROJECTS p{
+
+
+h1{
     display: flex;
     justify-content: center;
     font-size: xx-large;
@@ -128,14 +141,39 @@ nav {
     color: #08c7cd;
 }
 
+#PROJECTS p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 25px;
+    width: 70%;
+    color: #08c7cd;
+} 
+
+
+
 #ABOUT p{
     display: flex;
     justify-content: center;
-    font-size: xx-large;
-    margin-top: 15px;
-    width: 70%;
-
+    flex-direction: coloumn;
+    font-size: large;
+    margin-top: 25px;
+    width: 100rem;
     color: #08c7cd;
+} 
+
+.Project_Separator{
+    margin-top: 6%;
+    max-width: 1%;
+    max-height: 1%;
+    background-color: #08c7cd;
+}
+
+#POPUP_FOOTER_2{
+    background-color: #08c7cd;
+    position: relative;
+    bottom: 0;
+    height: 6%;
 }
 /* Main */
 
@@ -164,4 +202,8 @@ nav {
 
 
 
-@media screen and (min-width: 800px){}
+@media screen and (min-width: 800px){
+    /* ablak összeesését itt oldom meg customba flexbe nemegy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
+    műkődését és fixed nemelet rszponzív */
+}
+
