@@ -1,9 +1,9 @@
 /*Felugró Ablak */
-let $Projects = document.querySelector('.Navbar_Div_1');
-let $About = document.querySelector('.Navbar_Div_2');
+const $Projects = document.querySelector('.Navbar_Div_1');
+const $About = document.querySelector('.Navbar_Div_2');
 
-let $Projects_Popup = document.querySelector('#PROJECTS');
-let $About_Popup = document.querySelector('#ABOUT');
+const $Projects_Popup = document.querySelector('#PROJECTS');
+const $About_Popup = document.querySelector('#ABOUT');
 
 
 
@@ -23,8 +23,10 @@ function visibility_2(){
 
 /*Felugró Ablak */
 
-/*
-let $Loader = document.querySelector('#LOADER')
+
+/* Loader */
+
+const $Loader = document.querySelector('#LOADER')
 
 window.addEventListener('load', invisibility);
 
@@ -32,4 +34,7 @@ function invisibility(){
     $Loader.classList.add('.Invisible');
 }
 
-*/
+/* Loader */
+
+
+
