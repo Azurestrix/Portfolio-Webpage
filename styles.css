@@ -35,6 +35,7 @@ body {
 
 .Js_Invisible {
     display: none !important; 
+    
 }
 /*Loader */
 
@@ -73,11 +74,13 @@ nav {
 .Navbar_Div_1 {
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .Navbar_Div_2 {
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 
@@ -119,6 +122,7 @@ nav {
 
 .Js_Visible{
     opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
+    z-index: 777;
 }
 
 
@@ -126,7 +130,7 @@ nav {
 
 h1 {
     position: absolute;
-    top: 0;
+    top: 1%;
     font-size: xx-large;
     color: #08c7cd;
     font-size: xx-large;
@@ -152,6 +156,63 @@ h1 {
     clip-path: polygon(100% 100%, 100% 0%, 95% 100%, 0% 100%, 5% 100%, 0% 5%, 0% 100%);
 }
 
+#SELECTOR {
+    display: flex;
+    height: 10%;
+    margin-top: 7%;
+    opacity: 1;
+    box-shadow: none;  
+}
+
+#CAROUSEL_MAIN {
+    position: relative;
+    margin-bottom: 10%;
+    height: 70%;
+}
+
+/* .Carousle_Content {
+    height: 30%;
+    outline: 30px solid red;
+}
+ */
+#CAROUSEL_MAIN div {
+    position: relative;
+    height: 30%;
+
+}
+
+#CAROUSEL_NAV {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.Carousel_Button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: red;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+}
 
 /* Projects */
 
@@ -229,13 +290,12 @@ h1 {
     width: 50px;
 }
 
-#LINKS img {
+/* #LINKS img {
     width: 45px;
     height: 45px;
     background-color: #08c7cd;
     clip-path: polygon(90% 100%, 100% 90%, 100% 10%, 90% 0%, 10% 0%, 0% 10%, 0% 90%, 10% 100%);
-}
-
+} */
 
 
 /* About */
@@ -272,3 +332,6 @@ h1 {
     /* ablak összeesését itt oldom meg customba flexbe nem megy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
     műkődését és fixed nemelet rszponzív */
 }
+
+
+
