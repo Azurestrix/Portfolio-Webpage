@@ -158,51 +158,87 @@ h1 {
 
 #SELECTOR {
     display: flex;
+    align-items: center;
     height: 10%;
     margin-top: 7%;
     opacity: 1;
     box-shadow: none;  
 }
 
+
+
+
 #CAROUSEL_MAIN {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 70%;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  #CAROUSEL_NAV {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #PROJECT_LINK {
+    border: #08c7cd 1px solid;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    opacity: 1;
+  }
+
+  
+  #CAROUSEL_ELEMENTS {
     position: relative;
     margin-bottom: 10%;
     height: 70%;
-}
-
-/* .Carousle_Content {
-    height: 30%;
-    outline: 30px solid red;
-}
- */
-#CAROUSEL_MAIN div {
-    position: relative;
-    height: 30%;
-
-}
-
-#CAROUSEL_NAV {
     opacity: 1;
-    position: absolute;
+    box-shadow: none;
+  }
+  
+  
+  a {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  img {
     width: 100%;
-    padding: 20px 0;
-    bottom: 0;
+    height: 100%;
+  }
+  
+  button {
+    background-color: transparent;
+  }
+  
+  #LEFT_BUTTON {
+    margin-right: 10px;
     left: 0;
-    text-align: center;
-}
+    border: none;  
+  }
+  
+  #RIGHT_BUTTON {
+    margin-left: 10px;
+    right: 0;
+    border: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
 
-.Carousel_Button {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: red;
-    border-radius: 50%;
-}
 
 ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    user-select: none;
 }
 
 li {
