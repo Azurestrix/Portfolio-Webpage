@@ -58,69 +58,114 @@ function visibility_2(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Carousel */
 const $leftButton = document.querySelector('#LEFT_BUTTON');
 const $rightButton = document.querySelector('#RIGHT_BUTTON');
-const $carouselElements = document.querySelector('#PROJECT_LINK');
+let $carouselElements = document.querySelector('#PROJECT_LINK');
+const $carouselMain = document.querySelector('#CAROUSEL_MAIN');
 
 let carouselListCurrentPosition = 0;
 
 let currentCarouselList = []
 
+let carouselActivation = false;
 
 const htmlCarouselList = [
-  '<a href="http://"><img src="Images/lili.jpg" alt="1"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="2"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="3"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="4"></a>',
-  '<a href="http://"><img src="Images/dd.jpg" alt="5"></a>'
+  '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Portfolio\Images\Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
 ]
 
-const pythonCarouselList =[
-  '<a href="http://"><img src="Images/python.jpg" alt="1"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="2"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="3"></a>',
-  '<a href="http://"><img src="Images/Vector_2677.jpg" alt="4"></a>',
-  '<a href="http://"><img src="Images/pyther.jpg" alt="5"></a>'
+
+
+const pythonCarouselList = [
+  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
 ] 
 
+
+
+
+
+
+
+
+
+
+
+
+
 const $html_Css_Js = document.querySelectorAll('#HTML_CSS_JS_SELECTOR');
-const $python = document.querySelector('');
 
+  $html_Css_Js.forEach((li) => {
+  li.addEventListener('click', () => {
+    html_webpage_js();
+  });
+});
 
+const $python = document.querySelector('#PYTHON_SELECTOR');
 
-$html_Css_Js.addEventListener('click', html_webpage_js);
+$python.addEventListener('click', python)
+
 
 function html_webpage_js() {
-  currentCarouselList = htmlCarouselList
-  $carouselElements = currentCarouselList
-  console.error('MEGY')
-}
-
-
-
-/* $leftButton.addEventListener('click', leftClick);
-
-function leftClick() {
-  if (carouselListCurrentPosition === 0) {
-    return;
-  } else {
-    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition - 1];
-    carouselListCurrentPosition = carouselListCurrentPosition - 1;
+  if (carouselActivation === true) {
+    carouselActivation = false;
+    $carouselMain.setAttribute('style', 'opacity:0')
+  }else{
+    currentCarouselList = htmlCarouselList;
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
+    carouselActivation = true;
+    $carouselMain.setAttribute('style', 'opacity:1');
   }
 }
 
-$rightButton.addEventListener('click', rightClick);
-
-function rightClick() {
-  if (carouselListCurrentPosition === 4) {
-    return;
-  } else {
-    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition + 1];
-    carouselListCurrentPosition = carouselListCurrentPosition + 1;
+function python() {
+  if (carouselActivation === true) {
+    carouselActivation = false;
+    $carouselMain.setAttribute('style', 'opacity:0')
+  }else{
+    currentCarouselList = pythonCarouselList;
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
+    carouselActivation = true;
+    $carouselMain.setAttribute('style', 'opacity:1');
   }
 }
- */
-/* Carousel */
-
-
