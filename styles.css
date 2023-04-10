@@ -123,6 +123,7 @@ nav {
 .Js_Visible{
     opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
     z-index: 777;
+    user-select: auto;
 }
 
 
@@ -174,9 +175,12 @@ h1 {
     align-items: center;
     position: relative;
     height: 70%;
-    opacity: 1;
+    opacity: 0;
+    user-select: none;
     box-shadow: none;
   }
+
+
 
   #CAROUSEL_NAV {
     display: flex;
@@ -200,10 +204,14 @@ h1 {
     box-shadow: none;
   }
   
-  
+  figcaption{
+    color: #08c7cd;
+  }
+
   a {
     display: flex;
     justify-content: center;
+    text-decoration: none;
     
   }
   
@@ -368,6 +376,3 @@ li:hover {
     /* ablak összeesését itt oldom meg customba flexbe nem megy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
     műkődését és fixed nemelet rszponzív */
 }
-
-
-
