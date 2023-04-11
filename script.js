@@ -1,27 +1,16 @@
 /* Loader */
 
-const $Loader = document.querySelector('#LOADER')
+const $loader = document.querySelector('.Loader');
 
-/* window.addEventListener('load', invisibility); */   /* Jó lenne konkrétan tudni ez miért is nem megy? */
+setTimeout(loadRemove, 3000);
 
-/* function invisibility(){
-    $Loader.classList.add('.Js_Invisible');
+function loadRemove(){
+    $loader.classList.add('hide')
+    setTimeout(removeDom, 2000)
+    function removeDom() {
+        $loader.remove();
+    }
 }
-
-setTimeout(invisibility, 3000) */
-
-
-
-  
-/* window.addEventListener("load", function () {
-    this.setTimeout(function loader(event) {
-      document
-        .getElementById("preloader-container")
-        .classList.toggle("invisible");
-    }, 7000);
-  });
- */
-
 
 
 
@@ -105,20 +94,20 @@ let carouselActivation = false;
 
 const htmlCarouselList = [
   '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_2.jpg" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_2.jpg" alt="2"><figcaption>HCJ2</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>HCJ3</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>HCJ4</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>HCJ5</figcaption></figure></a>'
 ]
 
 
 
 const pythonCarouselList = [
-  '<a href="http://"><figure><img src="Images/InkedPython_1.jpg" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/InkedPython_2.jpg" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/InkedPython_3.jpg" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/InkedPython_4.jpg" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/InkedPython_5.jpg" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="http://"><figure><img src="Images/InkedPython_1.jpg" alt="P1"><figcaption>P1</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_2.jpg" alt="P2"><figcaption>P2</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_3.jpg" alt="P3"><figcaption>P3</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_4.jpg" alt="P4"><figcaption>P4</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_5.jpg" alt="P5"><figcaption>P5</figcaption></figure></a>'
 ] 
 
 
