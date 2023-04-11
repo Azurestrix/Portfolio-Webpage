@@ -2,7 +2,7 @@
 
 const $loader = document.querySelector('.Loader');
 
-setTimeout(loadRemove, 2000);
+setTimeout(loadRemove, 1000);
 
 function loadRemove(){
     $loader.classList.add('hide')
