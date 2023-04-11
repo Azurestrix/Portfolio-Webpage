@@ -104,21 +104,21 @@ let currentCarouselList = []
 let carouselActivation = false;
 
 const htmlCarouselList = [
-  '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Portfolio\Images\Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Portfolio\Images\Portfolio_Site.png" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_2.jpg" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
 ]
 
 
 
 const pythonCarouselList = [
-  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images\Portfolio_Site.png" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_1.jpg" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_2.jpg" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_3.jpg" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_4.jpg" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_5.jpg" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
 ] 
 
 
@@ -146,11 +146,25 @@ const $python = document.querySelector('#PYTHON_SELECTOR');
 $python.addEventListener('click', python)
 
 
+
+
+
+
+
+
+
+
+
+
 function html_webpage_js() {
-  if (carouselActivation === true) {
+  if (carouselActivation === true && currentCarouselList !== htmlCarouselList) {
+    currentCarouselList = htmlCarouselList;
+    carouselListCurrentPosition = 0;
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
+  }else if (carouselActivation === true){
     carouselActivation = false;
-    $carouselMain.setAttribute('style', 'opacity:0')
-  }else{
+    $carouselMain.setAttribute('style', 'opacity:0');
+  }else {
     currentCarouselList = htmlCarouselList;
     $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
     carouselActivation = true;
@@ -158,14 +172,62 @@ function html_webpage_js() {
   }
 }
 
+
 function python() {
-  if (carouselActivation === true) {
+  if (carouselActivation === true && currentCarouselList !== pythonCarouselList) {
+    currentCarouselList = pythonCarouselList;
+    carouselListCurrentPosition = 0;
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
+  }else if (carouselActivation === true){
     carouselActivation = false;
-    $carouselMain.setAttribute('style', 'opacity:0')
-  }else{
+    $carouselMain.setAttribute('style', 'opacity:0');
+  }else {
     currentCarouselList = pythonCarouselList;
     $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition];
     carouselActivation = true;
     $carouselMain.setAttribute('style', 'opacity:1');
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$leftButton.addEventListener('click', leftClick);
+
+function leftClick() {
+  if (carouselListCurrentPosition === 0) {
+    return;
+  } else {
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition - 1];
+    carouselListCurrentPosition = carouselListCurrentPosition - 1;
+  }
+}
+
+$rightButton.addEventListener('click', rightClick);
+
+function rightClick() {
+  if (carouselListCurrentPosition === 4) {
+    return;
+  } else {
+    $carouselElements.innerHTML = currentCarouselList[carouselListCurrentPosition + 1];
+    carouselListCurrentPosition = carouselListCurrentPosition + 1;
+  }
+}
+
+/* Carousel */
+
+
