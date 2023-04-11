@@ -105,20 +105,20 @@ let carouselActivation = false;
 
 const htmlCarouselList = [
   '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_2.jpg" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_2.jpg" alt="2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>This is an example image</figcaption></figure></a>'
 ]
 
 
 
 const pythonCarouselList = [
-  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_1.jpg" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_2.jpg" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_3.jpg" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_4.jpg" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Placeholders/InkedPython_5.jpg" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
+  '<a href="http://"><figure><img src="Images/InkedPython_1.jpg" alt="P1"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_2.jpg" alt="P2"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_3.jpg" alt="P3"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_4.jpg" alt="P4"><figcaption>This is an example image</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/InkedPython_5.jpg" alt="P5"><figcaption>This is an example image</figcaption></figure></a>'
 ] 
 
 
