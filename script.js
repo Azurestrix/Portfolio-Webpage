@@ -2,7 +2,7 @@
 
 const $loader = document.querySelector('.Loader');
 
-setTimeout(loadRemove, 1000);
+setTimeout(loadRemove, 5000);
 
 function loadRemove(){
     $loader.classList.add('hide')
@@ -12,10 +12,9 @@ function loadRemove(){
     }
 }
 
-
-
-
 /* Loader */
+
+
 
 
 
@@ -44,39 +43,6 @@ function visibility_2(){
 
 
 /*Felugró Ablak */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -122,6 +88,7 @@ const pythonCarouselList = [
 
 
 
+
 const $html_Css_Js = document.querySelectorAll('#HTML_CSS_JS_SELECTOR');
 
   $html_Css_Js.forEach((li) => {
@@ -135,14 +102,7 @@ const $python = document.querySelector('#PYTHON_SELECTOR');
 $python.addEventListener('click', python)
 
 
-
-
-
-
-
-
-
-
+$leftButton.addEventListener('click', leftClick);
 
 
 function html_webpage_js() {
@@ -186,17 +146,6 @@ function python() {
 
 
 
-
-
-
-
-
-
-
-
-
-$leftButton.addEventListener('click', leftClick);
-
 function leftClick() {
   if (carouselListCurrentPosition === 0) {
     return;
@@ -220,3 +169,4 @@ function rightClick() {
 /* Carousel */
 
 
+/* IMG re teszek sima opacity 0 át és transitionnal majd xy idő után vissza teszem rá */
