@@ -1,379 +1,407 @@
 /* General */
 * {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    outline: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
 }
 
 body {
-    /*Kérdezd meg: Csökkentsem-e a kép méretét mert 5 mb és az elvileg sok!?*/
-    background-image: url(Images/Vector_2677.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    min-width: fit-content;
-    /*<a href="https://www.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_14803753.htm#query=ai%20background&position=4&from_view=search&track=sph">Image by liuzishan</a> on Freepik*/
-    /* <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a> */
+  /*Kérdezd meg: Csökkentsem-e a kép méretét mert 5 mb és az elvileg sok!?*/
+  background-image: url(Images/Vector_2677.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  /* min-width: fit-content; */
+  /*<a href="https://www.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_14803753.htm#query=ai%20background&position=4&from_view=search&track=sph">Image by liuzishan</a> on Freepik*/
+  /* <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a> */
+  /* <a href="https://www.flaticon.com/free-icons/prism" title="prism icons">Prism icons created by Freepik - Flaticon</a> */
+  /* <a href="https://www.flaticon.com/free-icons/pyramid-chart" title="pyramid chart icons">Pyramid chart icons created by Freepik - Flaticon</a> */
 }
 /* General */
-
 
 /* Loader */
 
 .Loader {
-    background-color: #051755;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    z-index: 9999; 
-    transition: opacity 1s cubic-bezier(0.38, 0.19, 0.91, 0.51);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #051755;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  transition: opacity 1s cubic-bezier(0.38, 0.19, 0.91, 0.51);
+}
+
+.Loader img {
+  width: auto;
+  height: auto;
+  animation: blink ease-in-out 4s 1;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0.25;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      75% {
+        opacity: 0.75;
+      }
+      100% {
+        opacity: 1;
+      }
 }
 
 .hide {
-    opacity: 0;
-    user-select: none;
-    z-index: -9999;
+  opacity: 0;
+  user-select: none;
+  z-index: -9999;
 }
 /*Loader */
 
-
-
 /* Nav */
 
-        
 #NAVBAR_SECTION {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    max-height: 20%;
-    padding: 20px;
-    background-color: #051755;
-    clip-path: polygon(20% 100%, 80% 100%, 100% 0, 0 0);
-    box-shadow: inset 0 0 0 1px rgb(8, 199, 205);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  max-height: 20%;
+  padding: 20px;
+  background-color: #051755;
+  clip-path: polygon(20% 100%, 80% 100%, 100% 0, 0 0);
+  box-shadow: inset 0 0 0 1px rgb(8, 199, 205);
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;  
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 
 .Menu_Paragraph {
-    color: #08c7cd;
-    user-select: none;
+  color: #08c7cd;
+  user-select: none;
 }
 
 .Menu_Paragraph:hover {
-    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 2px rgba(8,199,205,0);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 2px 2px 2px rgba(8, 199, 205, 0);
 }
 
 .Navbar_Div_1 {
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 }
 
 .Navbar_Div_2 {
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 }
-
 
 /* Nav */
 
-
 /* Main */
 
- .Popup_Window {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
+.Popup_Window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-
 
 .Popup_Window div {
-    display: flex;
-    position: fixed;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    align-content: space-between;
-    top: 15%;
-    padding-left: 20px;
-    padding-right: 20px;
-    min-width: 100vh;
-    max-width: 100vh;
-    height: 80vh;
-    background-color: #051755;
-    transition: opacity 1s ease;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  position: fixed;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  top: 15%;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 100vh;
+  max-width: 100vh;
+  height: 80vh;
+  background-color: #051755;
+  transition: opacity 1s ease;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-
-.Js_Visible{
-    opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
-    z-index: 777;
-    user-select: auto;
+.Js_Visible {
+  opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
+  z-index: 777;
+  user-select: auto;
 }
-
 
 /* Projects */
 
-
 h1 {
-    position: absolute;
-    top: 1%;
-    font-size: xx-large;
-    color: #08c7cd;
-    font-size: xx-large;
-    user-select: none;
+  position: absolute;
+  top: 1%;
+  font-size: xx-large;
+  color: #08c7cd;
+  font-size: xx-large;
+  user-select: none;
 }
 
 #TOP_DECORATOR {
-    display: flex;
-    position: static;
-    opacity: 1;
-    height: 5%;
-    background-color: #08c7cd;
-    clip-path: polygon(100% 100%, 95% 0%, 300% 100%, 0% 100%, -200% 100%, 5% 0%, 0% 100%);
+  display: flex;
+  position: static;
+  opacity: 1;
+  height: 5%;
+  background-color: #08c7cd;
+  clip-path: polygon(
+    100% 100%,
+    95% 0%,
+    300% 100%,
+    0% 100%,
+    -200% 100%,
+    5% 0%,
+    0% 100%
+  );
 }
 
-
-#POPUP_FOOTER{
-    display: flex;
-    background-color: #08c7cd;
-    position: static;
-    height: 5%;
-    opacity: 1;
-    clip-path: polygon(100% 100%, 100% 0%, 95% 100%, 0% 100%, 5% 100%, 0% 5%, 0% 100%);
+#POPUP_FOOTER {
+  display: flex;
+  background-color: #08c7cd;
+  position: static;
+  height: 5%;
+  opacity: 1;
+  clip-path: polygon(
+    100% 100%,
+    100% 0%,
+    95% 100%,
+    0% 100%,
+    5% 100%,
+    0% 5%,
+    0% 100%
+  );
 }
 
 #SELECTOR {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 9%;
-    height: 10%;
-    opacity: 1;
-    box-shadow: none;  
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 9%;
+  height: 10%;
+  opacity: 1;
+  box-shadow: none;
+}
+
+#CAROUSEL_MAIN {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 70%;
+  opacity: 0;
+  user-select: none;
+  box-shadow: none;
+}
+
+#CAROUSEL_NAV {
+  display: flex;
+  justify-content: space-between;
+}
+
+#PROJECT_LINK {
+  border: #08c7cd 1px solid;
+  position: relative;
+  height: 90%;
+  width: 90%;
+  opacity: 1;
+  animation: blink-animation 1s linear;
 }
 
 
 
+#CAROUSEL_ELEMENTS {
+  position: relative;
+  margin-bottom: 10%;
+  height: 70%;
+  opacity: 1;
+  box-shadow: none;
+}
 
-#CAROUSEL_MAIN {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    height: 70%;
-    opacity: 0;
-    user-select: none;
-    box-shadow: none;
-  }
+figcaption {
+  background-color: #08c7cd;
+  color: #051755;
+  text-align: center;
+  clip-path: polygon(30% 100%, 70% 100%, 100% 0, 0 0);
+}
 
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 
+img {
+  width: 100%;
+  height: 100%;
+}
 
-  #CAROUSEL_NAV {
-    display: flex;
-    justify-content: space-between;
-  }
+button {
+  background-color: transparent;
+}
 
-  #PROJECT_LINK {
-    border: #08c7cd 1px solid;
-    position: relative;
-    height: 90%;
-    width: 90%;
-    opacity: 1;
-  }
+#LEFT_BUTTON {
+  margin-right: 10px;
+  left: 0;
+  border: none;
+}
 
-  
-  #CAROUSEL_ELEMENTS {
-    position: relative;
-    margin-bottom: 10%;
-    height: 70%;
-    opacity: 1;
-    box-shadow: none;
-  }
-  
-  figcaption{
-    background-color: #08c7cd;
-    color: #051755;
-    text-align: center;
-    clip-path: polygon(30% 100%, 70% 100%, 100% 0, 0 0);
+#RIGHT_BUTTON {
+  margin-left: 10px;
+  right: 0;
+  border: none;
+}
 
-    
-  }
-
-  a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  button {
-    background-color: transparent;
-  }
-  
-  #LEFT_BUTTON {
-    margin-right: 10px;
-    left: 0;
-    border: none;  
-  }
-  
-  #RIGHT_BUTTON {
-    margin-left: 10px;
-    right: 0;
-    border: none;
-  }
-  
-  button:hover {
-    cursor: pointer;
-  }
-  
-
+button:hover {
+  cursor: pointer;
+}
 
 ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
 }
 
 li {
-    list-style-type: none;
-    margin: 20px;
+  list-style-type: none;
+  margin: 20px;
 }
 
 li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Projects */
 
-
-
 /* About */
 
+#PROJECTS p {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  width: 70%;
+  color: #08c7cd;
+  user-select: none;
+}
 
-#PROJECTS p{
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    width: 70%;
-    color: #08c7cd;
-    user-select: none;
-} 
-
-
-#NORMAL_P{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: large;
-    width: 100rem;
-    color: #08c7cd;
-    user-select: none;
-} 
-
+#NORMAL_P {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+  width: 100rem;
+  color: #08c7cd;
+  user-select: none;
+}
 
 #SOLO_P {
-    font-size: x-large;
-    color: #08c7cd;
-    text-decoration: none;
-    user-select: none;
+  font-size: x-large;
+  color: #08c7cd;
+  text-decoration: none;
+  user-select: none;
 }
 
-
- #TOP_DECORATOR_2 {
-    display: flex;
-    position: static;
-    opacity: 1;
-    height: 5%;
-    background-color: #08c7cd;
-    clip-path: polygon(100% 100%, 95% 0%, 300% 100%, 0% 100%, -200% 100%, 5% 0%, 0% 100%);
-}
- 
-
-#POPUP_FOOTER_2{
-    display: flex;
-    background-color: #08c7cd;
-    position: static;
-    height: 5%;
-    opacity: 1;
-    clip-path: polygon(100% 100%, 100% 0%, 95% 100%, 0% 100%, 5% 100%, 0% 5%, 0% 100%);
+#TOP_DECORATOR_2 {
+  display: flex;
+  position: static;
+  opacity: 1;
+  height: 5%;
+  background-color: #08c7cd;
+  clip-path: polygon(
+    100% 100%,
+    95% 0%,
+    300% 100%,
+    0% 100%,
+    -200% 100%,
+    5% 0%,
+    0% 100%
+  );
 }
 
-
+#POPUP_FOOTER_2 {
+  display: flex;
+  background-color: #08c7cd;
+  position: static;
+  height: 5%;
+  opacity: 1;
+  clip-path: polygon(
+    100% 100%,
+    100% 0%,
+    95% 100%,
+    0% 100%,
+    5% 100%,
+    0% 5%,
+    0% 100%
+  );
+}
 
 #LINKS {
-    box-shadow: none;
-    display: flex;
-    justify-content: space-around;
-    opacity: 1;
-    position: static;
-    height: 50px;
-    width: 50px;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-around;
+  opacity: 1;
+  position: static;
+  height: 50px;
+  width: 50px;
 }
 
 i {
-    color: #08c7cd;
+  color: #08c7cd;
 }
 
 /* About */
 
 /* Main */
 
-
-
 /* Footer */
 #FOOTER_SECTION {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color:#05061b;
-    user-select: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #05061b;
+  user-select: none;
 }
 
 #FOOTER {
-    display: flex;
-    justify-content: center;
-    background-color: #08c7cd;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    min-width: 20em;
-
+  display: flex;
+  justify-content: center;
+  background-color: #08c7cd;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  min-width: 20em;
 }
 /* Footer */
 
-
-
-@media screen and (min-width: 800px){
-    /* ablak összeesését itt oldom meg customba flexbe nem megy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
+@media screen and (min-width: 800px) {
+  /* ablak összeesését itt oldom meg customba flexbe nem megy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
     műkődését és fixed nemelet rszponzív */
 }
-
-
-
