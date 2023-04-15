@@ -17,6 +17,7 @@ body {
   /* <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a> */
   /* <a href="https://www.flaticon.com/free-icons/prism" title="prism icons">Prism icons created by Freepik - Flaticon</a> */
 }
+
 /* General */
 
 /* Loader */
@@ -45,28 +46,33 @@ body {
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0;
-      }
-      25% {
-        opacity: 0.25;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      75% {
-        opacity: 0.75;
-      }
-      100% {
-        opacity: 1;
-      }
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.hide {
+.js-hide {
   opacity: 0;
   user-select: none;
   z-index: -9999;
 }
+
 /*Loader */
 
 /* Nav */
@@ -144,7 +150,8 @@ nav {
 }
 
 .Js_Visible {
-  opacity: 1 !important; /*Ezt megtudom valahogy kultúráltabban oldani? */
+  opacity: 1 !important;
+  /*Ezt megtudom valahogy kultúráltabban oldani? */
   z-index: 777;
   user-select: auto;
 }
@@ -166,15 +173,13 @@ h1 {
   opacity: 1;
   height: 5%;
   background-color: #08c7cd;
-  clip-path: polygon(
-    100% 100%,
-    95% 0%,
-    300% 100%,
-    0% 100%,
-    -200% 100%,
-    5% 0%,
-    0% 100%
-  );
+  clip-path: polygon(100% 100%,
+      95% 0%,
+      300% 100%,
+      0% 100%,
+      -200% 100%,
+      5% 0%,
+      0% 100%);
 }
 
 #POPUP_FOOTER {
@@ -183,15 +188,13 @@ h1 {
   position: static;
   height: 5%;
   opacity: 1;
-  clip-path: polygon(
-    100% 100%,
-    100% 0%,
-    95% 100%,
-    0% 100%,
-    5% 100%,
-    0% 5%,
-    0% 100%
-  );
+  clip-path: polygon(100% 100%,
+      100% 0%,
+      95% 100%,
+      0% 100%,
+      5% 100%,
+      0% 5%,
+      0% 100%);
 }
 
 #SELECTOR {
@@ -330,15 +333,13 @@ li:hover {
   opacity: 1;
   height: 5%;
   background-color: #08c7cd;
-  clip-path: polygon(
-    100% 100%,
-    95% 0%,
-    300% 100%,
-    0% 100%,
-    -200% 100%,
-    5% 0%,
-    0% 100%
-  );
+  clip-path: polygon(100% 100%,
+      95% 0%,
+      300% 100%,
+      0% 100%,
+      -200% 100%,
+      5% 0%,
+      0% 100%);
 }
 
 #POPUP_FOOTER_2 {
@@ -347,15 +348,13 @@ li:hover {
   position: static;
   height: 5%;
   opacity: 1;
-  clip-path: polygon(
-    100% 100%,
-    100% 0%,
-    95% 100%,
-    0% 100%,
-    5% 100%,
-    0% 5%,
-    0% 100%
-  );
+  clip-path: polygon(100% 100%,
+      100% 0%,
+      95% 100%,
+      0% 100%,
+      5% 100%,
+      0% 5%,
+      0% 100%);
 }
 
 #LINKS {
@@ -396,6 +395,7 @@ i {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   min-width: 20em;
 }
+
 /* Footer */
 
 
@@ -408,6 +408,7 @@ i {
     max-width: 88vh;
 
   }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -418,21 +419,28 @@ i {
   }
 }
 
-@media screen and (max-width: 600px) {             /* innen */
+@media screen and (max-width: 600px) {
+  /* innen */
 
   .Popup_Window div {
     min-width: 61vh;
     max-width: 61vh;
   }
 
-  figcaption{
+  figcaption {
     font-size: small;
   }
 
   #PROJECT_LINK {
     width: 88%;
   }
+}
 
+@media screen and (max-width: 510px) {
+
+  .Loader img {
+    width: 99%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -442,7 +450,7 @@ i {
     max-width: 48vh;
   }
 
-  figcaption{
+  figcaption {
     font-size: x-small;
   }
 
@@ -451,20 +459,20 @@ i {
   }
 }
 
- @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
   .Popup_Window div {
     min-width: 35vh;
     max-width: 35vh;
   }
 
-  figcaption{
+  figcaption {
     font-size: 7px;
   }
 
   #PROJECT_LINK {
     width: 79%;
   }
-} 
+}
 
 /* Responsivity */
