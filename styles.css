@@ -13,11 +13,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  /* min-width: fit-content; */
   /*<a href="https://www.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_14803753.htm#query=ai%20background&position=4&from_view=search&track=sph">Image by liuzishan</a> on Freepik*/
   /* <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a> */
   /* <a href="https://www.flaticon.com/free-icons/prism" title="prism icons">Prism icons created by Freepik - Flaticon</a> */
-  /* <a href="https://www.flaticon.com/free-icons/pyramid-chart" title="pyramid chart icons">Pyramid chart icons created by Freepik - Flaticon</a> */
 }
 /* General */
 
@@ -127,7 +125,6 @@ nav {
 .Popup_Window div {
   display: flex;
   position: fixed;
-  align-content: flex-start;
   flex-wrap: wrap;
   align-content: space-between;
   top: 15%;
@@ -401,7 +398,73 @@ i {
 }
 /* Footer */
 
-@media screen and (min-width: 800px) {
-  /* ablak összeesését itt oldom meg customba flexbe nem megy mert az egymás mellé tételektre can megoldva énmeg le fixedeltem effektív átírtam az 
-    műkődését és fixed nemelet rszponzív */
+
+/* Responsivity */
+
+@media screen and (max-width: 800px) {
+
+  .Popup_Window div {
+    min-width: 88vh;
+    max-width: 88vh;
+
+  }
 }
+
+@media screen and (max-width: 700px) {
+
+  .Popup_Window div {
+    min-width: 74vh;
+    max-width: 74vh;
+  }
+}
+
+@media screen and (max-width: 600px) {             /* innen */
+
+  .Popup_Window div {
+    min-width: 61vh;
+    max-width: 61vh;
+  }
+
+  figcaption{
+    font-size: small;
+  }
+
+  #PROJECT_LINK {
+    width: 88%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .Popup_Window div {
+    min-width: 48vh;
+    max-width: 48vh;
+  }
+
+  figcaption{
+    font-size: x-small;
+  }
+
+  #PROJECT_LINK {
+    width: 84%;
+  }
+}
+
+ @media screen and (max-width: 400px) {
+
+  .Popup_Window div {
+    min-width: 35vh;
+    max-width: 35vh;
+  }
+
+  figcaption{
+    font-size: 7px;
+  }
+
+  #PROJECT_LINK {
+    width: 79%;
+  }
+} 
+
+/* Responsivity */
