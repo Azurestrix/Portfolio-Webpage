@@ -401,78 +401,125 @@ i {
 
 /* Responsivity */
 
-@media screen and (max-width: 800px) {
+
+ @media screen and (max-width: 800px) {
 
   .Popup_Window div {
-    min-width: 88vh;
-    max-width: 88vh;
+    min-width: 88vw;
+    max-width: 88vw;
 
   }
 
 }
 
-@media screen and (max-width: 700px) {
+  @media screen and (max-width: 625px) {
 
   .Popup_Window div {
-    min-width: 74vh;
-    max-width: 74vh;
+    min-width: 88vw;
+    max-width: 88vw;
   }
-}
 
-@media screen and (max-width: 600px) {
-  /* innen */
-
-  .Popup_Window div {
-    min-width: 61vh;
-    max-width: 61vh;
+  #PROJECT_LINK {
+    width: 89%;
   }
 
   figcaption {
     font-size: small;
   }
+}   
+
+@media screen and (max-width: 570px) {
 
   #PROJECT_LINK {
     width: 88%;
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 520px) {
+
+  #PROJECT_LINK {
+    width: 87%;
+  }
 
   .Loader img {
     width: 99%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  .Popup_Window div {
-    min-width: 48vh;
-    max-width: 48vh;
   }
 
   figcaption {
     font-size: x-small;
   }
+}
+
+@media screen and (max-width: 480px) {
 
   #PROJECT_LINK {
-    width: 84%;
+    width: 86%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
-  .Popup_Window div {
-    min-width: 35vh;
-    max-width: 35vh;
+  #PROJECT_LINK {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  #PROJECT_LINK {
+    width: 84%;
   }
 
   figcaption {
     font-size: 7px;
   }
+}
+
+@media screen and (max-width: 390px) {
+
+  #PROJECT_LINK {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  #PROJECT_LINK {
+    width: 82%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  #PROJECT_LINK {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  #PROJECT_LINK {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 315px) {
 
   #PROJECT_LINK {
     width: 79%;
   }
+
+  figcaption {
+    font-size: 6px;
+  }
 }
+
+@media screen and (max-width: 298px) {
+
+  #PROJECT_LINK {
+    width: 78%;
+  }
+}
+
 
 /* Responsivity */
