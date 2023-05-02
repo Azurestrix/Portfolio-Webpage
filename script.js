@@ -145,7 +145,7 @@ function rightClick() {
 
 const allCarouselImageSource = [
   "Images/Portfolio_Site.jpg",
-  "Images/Portfolio_webpage.png.jpg",
+  "Images/Portfolio_webpage.png",
   "Images/Inkedhtmlcssjs_3.jpg",
   "Images/Inkedhtmlcssjs_4.jpg",
   "Images/Inkedhtmlcssjs_5.jpg",
