@@ -50,7 +50,7 @@ let carouselActivation = false;
 
 const htmlCarouselList = [
   '<a href="https://github.com/Domokos-Laszlo-Oliver/Final-Portfolio"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
-  '<a href="http://"><figure><img src="Images/Portfolio_webpage.png" alt="2"><figcaption>HCJ2</figcaption></figure></a>',
+  '<a href="http://"><figure><img src="Images/Portfolio_webpage.png" alt="2"><figcaption>In Progress</figcaption></figure></a>',
   '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>HCJ3</figcaption></figure></a>',
   '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>HCJ4</figcaption></figure></a>',
   '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_5.jpg" alt="5"><figcaption>HCJ5</figcaption></figure></a>',
