@@ -154,6 +154,7 @@ const allCarouselImageSource = [
   "Images/InkedPython_3.jpg",
   "Images/InkedPython_4.jpg",
   "Images/InkedPython_5.jpg",
+  "Images/S.E.R.B..png"
 ];
 const preLoadedImages = [];
 
