@@ -49,7 +49,7 @@ let currentCarouselList = [];
 let carouselActivation = false;
 
 const htmlCarouselList = [
-  '<a href="https://github.com/Azurestrix/Final-Portfolio"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
+  '<a href="https://github.com/Azurestrix/Portfolio-Webpage"><figure><img src="Images/Portfolio_Site.jpg" alt="1"><figcaption>This is my portfolio webpage you are on.</figcaption></figure></a>',
   '<a href="https://github.com/Azurestrix/Mandy"><figure><img src="Images/Portfolio_webpage.png" alt="2"><figcaption>In Progress</figcaption></figure></a>',
   '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_3.jpg" alt="3"><figcaption>HCJ3</figcaption></figure></a>',
   '<a href="http://"><figure><img src="Images/Inkedhtmlcssjs_4.jpg" alt="4"><figcaption>HCJ4</figcaption></figure></a>',
